@@ -39,6 +39,12 @@ function changeColorCodes(bitmap, bitmapData) {
     bitmap.writeUInt8(colorCodes.green, i + 1);
     bitmap.writeUInt8(colorCodes.red, i + 2);
   }
+  outputImage(bitmap);
+}
+
+
+function outputImage(bitmap) {
+  console.log('Printing new image');
   fs.writeFileSync(__dirname + '/output/newImage.bmp', bitmap);
 }
 
