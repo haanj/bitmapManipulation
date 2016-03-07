@@ -1,0 +1,17 @@
+{
+  "name": "bitmap_transformation",
+  "version": "0.1.0",
+  "description": "Project for Code Fellows 401. This program will take a non-paletted bitmap image and perform different transformations on it.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "haanj",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-mocha": "^2.2.0"
+  }
+}
