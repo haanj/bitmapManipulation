@@ -1,9 +1,8 @@
 'use strict';
 const fs = require('fs');
-// const controller = require(__dirname + '/lib/controller');
 const colorHandler = require(__dirname + '/lib/colorHandler');
 
-function start(){
+function readFile(){
   let imagePath = (__dirname + '/' + process.argv[2]);
   fs.readFile(imagePath, (err, bitmap) => {
     if (err) throw err;
@@ -20,4 +19,4 @@ function getBitmapData(bitmap) {
   return bitmapData;
 }
 
-start();
+readFile();
