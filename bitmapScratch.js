@@ -22,19 +22,20 @@ console.dir(bitmapData);
 
 // TODO: EDIT image
 for (var i = bitmapData.pixelArrayStart; i < bitmap.length - 3;  i = i + 3) {
+  let colorCodes;
 
-  var blue = bitmap.readUInt8(i);
-  console.log('blue:   ', blue);
+  colorCodes.blue = bitmap.readUInt8(i);
+  console.log('blue:   ', colorCodes.blue);
 
-  var green = bitmap.readUInt8(i + 1);
-  console.log('green:   ', green);
+  colorCodes.green = bitmap.readUInt8(i + 1);
+  console.log('green:   ', colorCodes.green);
 
-  var red = bitmap.readUInt8(i + 2);
-  console.log('red:   ', red);
+  colorCodes.red = bitmap.readUInt8(i + 2);
+  console.log('red:   ', colorCodes.red);
 
   // var colorCode4 = bitmap.readUInt8(i + 3);
   // console.log('colorcode4:   ', colorCode4);
-  var average = (blue + green + red) / 3;
+  var average = (colorCodes.blue + colorCodes.green + colorCodes.red) / 3;
 
   // bitmap.writeUInt8(blue, i);
   // bitmap.writeUInt8(green, i + 1);
