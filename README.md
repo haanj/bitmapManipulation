@@ -16,3 +16,8 @@ The following transformation commands are supported:
 * invert
 * darken
 * lighten
+
+## Example
+```
+node index.js bee.bmp invert
+```
